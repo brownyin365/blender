@@ -58,7 +58,7 @@ abstract class Controller
     {
         $model = $this->find($id);
 
-        return view("back.{$this->moduleName}.edit")
+        return view("back.{$this->moduleName}.edit");
             ->with('model', $model)
             ->with('module', $this->moduleName);
     }
